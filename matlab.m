@@ -19,7 +19,8 @@ hy = YY(2) - YY(1);
 
 Source_size  = 0.5;
 Source_shift = 2;
-Source =  max(Source_size^2 - X.^2-(Y-Source_shift).^2, 0) + max(Source_size^2 - X.^2-(Y+Source_shift).^2, 0) ;
+Source =  max(Source_size^2 - X.^2-(Y-Source_shift).^2, 0) +
+        max(Source_size^2 - X.^2-(Y+Source_shift).^2, 0) ;
 
 % plot the source
 figure(1); clf; hold on; axis equal; axis off;
